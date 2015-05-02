@@ -12,7 +12,7 @@ public class ConfigurationLoader {
 	private ConfigurationLoader() {
 	}
 
-	public Configuration loadConfiguration()  {
+	public static Configuration loadConfiguration()  {
 		String configurationDir = System.getProperty(MTO_CONF_PATH);
 		StringBuilder stringBuilder = new StringBuilder(configurationDir);
 		stringBuilder.append(Configuration.class.getSimpleName()).append(FILE_EXT);
